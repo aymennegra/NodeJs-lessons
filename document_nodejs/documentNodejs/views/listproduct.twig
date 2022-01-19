@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <a href="/products/create"> create new user </a>
+    <table>
+        <thead>
+            <th>#</th>
+            <th>label</th>
+            <th> price</th>
+            <th> quantity </th>  
+            <th> user </th>
+          
+
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <td> {{ product.label }} </td>
+                    <td> {{ product.price }} </td>
+                    <td> {{ product.quantity }} </td>
+                     <td> {{ product.user }} </td>
+                    <th> <a href="/products/{{ product._id }}"> show </a> </th>
+                    <th> <a href="/products/delete/{{ product._id }}"> delete </a> </th>
+                    
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>

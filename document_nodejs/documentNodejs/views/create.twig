@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Product</title>
+</head>
+<body>
+    <a href="/products/"> Go Bak To List </a>
+
+    <fieldset>
+        <legend> Create New Product </legend>
+        <form action="/products/create" method="post" enctype="multipart/form-data" >
+            <table>
+                <tr>
+                    <td>  label </td>
+                    <td> <input type="text" required placeholder="label" name="label" > </td>
+                </tr>
+                <tr>
+                    <td> price </td>
+                    <td> <input type="text" required placeholder="price" name="price" > </td>
+                </tr>
+                <tr>
+                    <td> quantity </td>
+                    <td> <input type="text" required placeholder="quantity" name="quantity" > </td>
+                </tr>
+                <tr>
+                    <td> Image </td>
+                    <td> <input type="file" name="image" > </td>
+                </tr>
+                 <tr>
+                    <td> user </td>
+                    <td> <input type="text" required placeholder="user" name="user" > </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Save">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>
